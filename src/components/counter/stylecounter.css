@@ -1,0 +1,38 @@
+/* Container for the counter */
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the buttons */
+  .counter-container button {
+    background-color: #008cba;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .counter-container button:hover {
+    background-color: #005f7a;
+  }
+  
+  /* Styling for the counter display */
+  .counter-container span {
+    font-size: 24px;
+    font-weight: bold;
+    min-width: 40px;
+    text-align: center;
+  }
+  
