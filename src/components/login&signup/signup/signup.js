@@ -1,5 +1,5 @@
-import "../../style.css";
 import { Component } from "react";
+import "../../style.css";
 
 class Signup extends Component {
   render() {
