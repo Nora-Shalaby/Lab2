@@ -1,0 +1,116 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://s3-alpha-sig.figma.com/img/4310/8220/0c0aef38c1e894e495b412e21d2e7fbb?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Be8LDTi567AYrvnq19dAcH3vYkfGUctvtlA87cqHNAzROiDsXzVqjkBooeFuGnYari1yMDL-Nij68qMbzu247srOG3rkVc2ZKyQxZN7l9gN8C0Vh6CVqCfugaZk2i8x~CzHt~PVc9Q0Pkchc0zPG8vg5aSL8MPv-2aBmfSvqUG0KIo9su~qq9isI2TzPLq2vmSuRl0~1-4qBCU-YgNXICvkXjVBe1U~0DP~OHPCf9vF9GIPKRffiraPPvVLKo-muuGB0KIxt7HU5UUswt1COSVHC5TrrU189noQ8cgoTk2rgMIYFp35j3lGefdZq943YRx-zpvC5vgPVlsLzBMlHKg__");
+  background-size: cover;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-header h2 {
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  margin-bottom: 30px;
+}
+
+.social-login {
+  margin-bottom: 20px;
+}
+
+.facebook-login, .google-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+}
+
+.facebook-login i, .google-login i {
+  margin-right: 10px;
+}
+
+.facebook-login:hover {
+  background-color: #f7f7f7;
+}
+
+.google-login:hover {
+  background-color: #f7f7f7;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider::before {
+  margin-right: .25em;
+}
+
+.divider::after {
+  margin-left: .25em;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+
+
+button[type="submit"] {
+  background-color: #ccc;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #aaa;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}

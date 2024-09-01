@@ -1,0 +1,95 @@
+.signup-container {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.left {
+  flex: 1;
+  padding: 80px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.right {
+  flex: 1;
+  background: url('./SignUp.png') no-repeat center center;
+  background-size: cover;
+}
+
+.fram5 {
+  width: 665px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.fram8 {
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: #666;
+}
+
+.txtfield {
+  margin-bottom: 24px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.password {
+  margin-bottom: 32px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 12px;
+}
+
+.bttnframe {
+  text-align: left;
+}
+
+button {
+  width: 100%;
+  max-width: 256px;
+  padding: 16px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+

@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./CardsStyle.css";
 import Counter from "../counter/counter";
 
 function Cards() {
