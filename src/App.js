@@ -1,10 +1,10 @@
 import "./App.css";
-// import First from "./components/context/first/first";
-// import Counter from "./components/counter/counter";
-import Login_Signup from "./components/login&signup/login&signup/login&signup";
-// import Cards from "./components/cards/cards";
-// import GetExample from "./components/GETExample/GETExample";
-// import PostExample from "./components/POSTExample/POSTExample";
+import First from "./components/ClassComponents/context/first/first";
+import Counter from "./components/ClassComponents/counter/counter";
+import Login_Signup from "./components/ClassComponents/login&signup/login&signup/login&signup";
+import Cards from "./components/ClassComponents/cards/cards";
+import GetExample from "./components/ClassComponents/GETExample/GETExample";
+import PostExample from "./components/ClassComponents/POSTExample/POSTExample";
 import CounterUsingHooks from "./components/HOOKS/ProductsUsingHooks/CounterUsingHooks/CounterUsingHooks";
 import Products from "./components/HOOKS/ProductsUsingHooks/Products/Products";
 import Login from "./components/HOOKS/Login & Sign Up Using Hooks/Log In/LogInForm";
@@ -20,12 +20,12 @@ import SearchCommentsById from "./components/HOOKS/Lab  7/7/SearchById";
 function App() {
   return (
     <div className="App">
-      {/* ********************Lab2******************* */}
+      {/* ********************Lab3******************* */}
       {/* <Counter /> */}
-      {/* <Login_Signup /> */}
+      {/* <Cards /> */}
 
       {/* ******************** Lab4 ************************ */}
-      {/* <Cards /> */}
+      {/* <Login_Signup /> */}
       {/* <First /> */}
 
       {/* ******************** Lab 5************************* */}
@@ -36,14 +36,15 @@ function App() {
       {/* <CounterUsingHooks /> */}
       {/* <Products /> */}
       {/* <SignUpForm /> */}
+      {/* <Login/> */}
 
       {/* ******************** Lab 7 *********************** */}
-      {/* <CounterWithButton /> */}
-      {/* <GreetingUpdate /> */}
-      {/* <IncrementCounterEvrySecond /> */}
-      {/* <ListenerToWidowSize /> */}
-      {/* <TrackStates /> */}
-      {/* <RenderComments /> */}
+      <CounterWithButton />
+      <GreetingUpdate />
+      <IncrementCounterEvrySecond />
+      <ListenerToWidowSize />
+      <TrackStates />
+      <RenderComments />
       <SearchCommentsById />
     </div>
   );
