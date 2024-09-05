@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function CounterUsingHooks() {
   const [counter, setCounter] = useState(0);
   const decrement = () => {
-    setCounter((prev) => prev - 1);
+    counter > 1 && setCounter((prev) => prev - 1);
   };
   const increment = () => {
     setCounter((prev) => prev + 1);

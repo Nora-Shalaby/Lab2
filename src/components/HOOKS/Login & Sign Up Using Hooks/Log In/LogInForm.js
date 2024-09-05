@@ -14,7 +14,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
-          <h2>Log in</h2>
+          <h2>Sign up</h2>
           <p>
             Don’t have an account? <a href="/signup">Sign up</a>
           </p>

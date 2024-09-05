@@ -5,17 +5,23 @@ class Signup extends Component {
   constructor() {
     super();
     this.state = {
+      name: "",
       email: "",
       password: "",
-      currentDate: new Date().toLocaleDateString(),
+      currentDate: new Date().toLocaleString(),
       showUserData: false,
     };
+    this.nameRef = React.createRef();
     this.emailRef = React.createRef();
   }
 
   componentDidMount() {
     this.emailRef.current.focus();
   }
+
+  handleName = (event) => {
+    this.setState({ name: event.target.value });
+  };
 
   handleEmail = (event) => {
     this.setState({ email: event.target.value });
@@ -25,16 +31,26 @@ class Signup extends Component {
     this.setState({ password: event.target.value });
   };
 
-  showData = (event) => {
+  showUserData = (event) => {
     event.preventDefault();
     this.setState({ showUserData: true });
   };
 
   render() {
+    const { currentDate, showUserData, name, email } = this.state;
+
     return (
       <div>
         <h1>Sign Up Page</h1>
         <form>
+          <label>UserName:</label>
+          <input
+            type="text"
+            value={this.state.name}
+            onChange={this.handleName}
+            ref={this.nameRef}
+          />
+          <br />
           <label>Email:</label>
           <input
             type="email"
@@ -50,16 +66,16 @@ class Signup extends Component {
             onChange={this.handlePassword}
           />
           <br />
-          <button type="button" onClick={this.showData}>
+          <button type="button" onClick={this.showUserData}>
             Show Data
           </button>
         </form>
 
-        {this.state.showUserData && (
+        {showUserData && (
           <div>
             <h2>Hi, New User</h2>
-            <p>Your email is: {this.state.email}</p>
-            <p>You signed up on: {this.state.currentDate}</p>
+            <p>Your email is: {email}</p>
+            <p>You signed up on: {currentDate}</p>
           </div>
         )}
       </div>
