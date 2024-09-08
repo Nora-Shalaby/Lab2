@@ -1,4 +1,3 @@
-import "./App.css";
 import First from "./components/ClassComponents/context/first/first";
 import Counter from "./components/ClassComponents/counter/counter";
 import Login_Signup from "./components/ClassComponents/login&signup/login&signup/login&signup";
@@ -16,6 +15,11 @@ import ListenerToWidowSize from "./components/HOOKS/Lab  7/4/ListenerToWidowSize
 import TrackStates from "./components/HOOKS/Lab  7/5/TrackStates";
 import RenderComments from "./components/HOOKS/Lab  7/6/RenderComments";
 import SearchCommentsById from "./components/HOOKS/Lab  7/7/SearchById";
+import UseRef from "./components/HOOKS/useRef/useRef";
+import React, { useContext } from "react";
+import UseContext from "./components/HOOKS/useContext/UseContext";
+import UseReducer from "./components/HOOKS/useReducer/useReducer";
+export const mycontext = React.createContext();
 
 function App() {
   return (
@@ -39,13 +43,19 @@ function App() {
       {/* <Login/> */}
 
       {/* ******************** Lab 7 *********************** */}
-      <CounterWithButton />
+      {/* <CounterWithButton />
       <GreetingUpdate />
       <IncrementCounterEvrySecond />
       <ListenerToWidowSize />
       <TrackStates />
       <RenderComments />
-      <SearchCommentsById />
+      <SearchCommentsById /> */}
+      {/* *********************Lab 8*************************** */}
+      {/* <UseRef /> */}
+      {/* <mycontext.Provider value="nora">
+        <UseContext />
+      </mycontext.Provider> */}
+      <UseReducer />
     </div>
   );
 }
